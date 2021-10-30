@@ -9,13 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-            .cornerRadius(10)
-            .background(Color.green)
-            .foregroundColor(Color.white)
-            .background(Color.blue)
-            .cornerRadius(10)
+        // HStack, VStack
+        // ZStack : stacks elements on top of each other
+        VStack (){
+            Image("logo").resizable().aspectRatio(contentMode: .fit)
+            
+            HStack{
+                    Text("Hello, world!")
+                        .padding()
+                        .cornerRadius(10)
+                        .background(Color.green)
+                        .foregroundColor(Color.white)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                
+                    Spacer()
+                
+                    Text("Hello, world!")
+                        .padding()
+                        .cornerRadius(10)
+                        .background(Color.green)
+                        .foregroundColor(Color.white)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+            }
+        
+        }
+        
     }
 }
 
